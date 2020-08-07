@@ -1,5 +1,5 @@
-﻿function abcfunc {  
-    docker run -i --rm -v abc:/root appbaseio/abc
+﻿function abcfunc ([string]$command){  
+    docker run -i --rm -v abc:/root appbaseio/abc "$command"
 }
 Set-Alias -Name abc -Value abcfunc
 
